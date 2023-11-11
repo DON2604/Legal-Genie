@@ -7,21 +7,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'black', // Add this line to set the background color to black
   },
-  headerImage: {
-    width: 50,
-    height: 50,
+
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 3,
+    paddingHorizontal: 10,
+    borderRadius: 4,
+    elevation: 3,
+    margin: 10,
   },
-  text: {
-    fontSize: 18,
-    marginVertical: 10,
-    color: 'white', // Set text color to white for better visibility on black background
-  },
+
   link: {
     color: 'white', 
   },
 
   image: {
-    width: '40%',
+    marginTop: -170,
+    width: '50%',
     height: '40%',
     resizeMode: 'contain',
   }

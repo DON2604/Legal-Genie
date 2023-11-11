@@ -1,9 +1,9 @@
-// signup.js
-
+import React from 'react'
 import { Link, Stack } from 'expo-router';
-import { Image, Text, View } from 'react-native';
+import { LinearGradient } from "expo-linear-gradient";
+import { Image, Text, View, Pressable } from 'react-native';
 import styles from '../styles/signup.styles';
-import leg from '../constants/leg.jpeg';
+import Logo from '../constants/legs.svg';
 
 function LogoTitle() {
   return (
@@ -20,18 +20,26 @@ export default function Signup() {
       <Stack.Screen 
         options={{
           headerShown: false,
-          title: 'Signup',
-          headerStyle: { backgroundColor: '#f4511e' }, // Set header background color to transparent
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-          headerLeft: () => null,
-          headerTitle: (props) => <LogoTitle {...props} />,
         }}
       />
-      <Image style={styles.image} source={leg} /> 
-      <Text style={styles.text}>Sign Up Page</Text>
+      <Logo style={styles.image} /> 
+
+      <View style={{flexDirection: 'row'}}>
+      <LinearGradient
+        colors={['#a390f9','#fed488']}
+        style={styles.button}>
+        <Pressable LinearGradient style={styles.button}>Sign Up</Pressable>
+        </LinearGradient> 
+
+
+        <LinearGradient
+        colors={['#a390f9','#fed488']}
+        style={styles.button}>
+        <Pressable LinearGradient style={styles.button}>Login</Pressable>
+        </LinearGradient>
+
+</View>
+
       <Link style={styles.link} href={{ pathname: 'home', params: { name: 'Bacon' } }}>Go to Home again</Link>
     </View>
   );
