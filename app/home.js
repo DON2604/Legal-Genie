@@ -23,12 +23,14 @@ export default function Home() {
           headerTitleStyle: {
             fontWeight: 'bold',
           },
+          headerLeft: () => null,
           // https://reactnavigation.org/docs/headers#replacing-the-title-with-a-custom-component
           headerTitle: props => <LogoTitle {...props} />,
         }}
       />
       <Text>Home Screen</Text>
       <Link href={{ pathname: 'details', params: { name: 'Bacon' } }}>Go to Details</Link>
+      <Link href={{ pathname: 'signup', params: { name: 'signup' } }}>Go to Signup</Link>
     </View>
   );
 }
