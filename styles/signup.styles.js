@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     marginTop: '3rem',
     width: '50%',
     resizeMode: 'contain',
-    position: 'relative'
+    position: 'relative',
   },
 
 });

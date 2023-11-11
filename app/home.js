@@ -29,8 +29,8 @@ export default function Home() {
         }}
       />
       <Text>Home Screen</Text>
-      <Link href={{ pathname: 'details', params: { name: 'Bacon' } }}>Go to Details</Link>
       <Link href={{ pathname: 'signup', params: { name: 'signup' } }}>Go to Signup</Link>
+      <Link href={{ pathname: 'about', params: { name: 'about' } }}>Go to About</Link>
     </View>
   );
 }
