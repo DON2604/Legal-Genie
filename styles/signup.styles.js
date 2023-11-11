@@ -25,14 +25,13 @@ const styles = StyleSheet.create({
   image: {
     marginTop: -170,
     width: '50%',
-    height: '40%',
+    height: '20%',
     resizeMode: 'contain',
   },
   
   texti: {
-    paddingBottom: 10 ,  
+    marginTop: '3rem',
     width: '50%',
-    height: '40%',
     resizeMode: 'contain',
     position: 'relative'
   },

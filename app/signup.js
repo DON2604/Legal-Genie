@@ -25,7 +25,7 @@ export default function Signup() {
       />
 
       <Logo style={styles.image} /> 
-      <Image style={styles.texti} source={texti} /> 
+      <Image  style={styles.texti}  source={texti} /> 
 
       <View style={{flexDirection: 'row'}}>
       <LinearGradient
