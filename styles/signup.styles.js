@@ -27,7 +27,16 @@ const styles = StyleSheet.create({
     width: '50%',
     height: '40%',
     resizeMode: 'contain',
-  }
+  },
+  
+  texti: {
+    paddingBottom: 10 ,  
+    width: '50%',
+    height: '40%',
+    resizeMode: 'contain',
+    position: 'relative'
+  },
+
 });
 
 export default styles;

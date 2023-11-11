@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Image, Text, View, Pressable } from 'react-native';
 import styles from '../styles/signup.styles';
 import Logo from '../constants/legs.svg';
+import texti from '../constants/textg.png';
 
 function LogoTitle() {
   return (
@@ -22,7 +23,9 @@ export default function Signup() {
           headerShown: false,
         }}
       />
+
       <Logo style={styles.image} /> 
+      <Image style={styles.texti} source={texti} /> 
 
       <View style={{flexDirection: 'row'}}>
       <LinearGradient
