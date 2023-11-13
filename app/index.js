@@ -3,7 +3,7 @@ import { Link, Stack } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image, View, Pressable, Text } from "react-native";
 import styles from "../styles/signup.styles";
-import Logo from "../constants/legs.svg";
+import text2 from "../constants/leg.jpeg";
 import texti from "../constants/textg.png";
 import { useFonts } from 'expo-font';
 
@@ -27,7 +27,7 @@ export default function Signup() {
         }}
       />
 
-      <Logo style={styles.image} />
+      <Image style={styles.image} source={text2} />
       <Image style={styles.texti} source={texti} />
 
       <View style={{ flexDirection: "row" }}>

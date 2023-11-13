@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    marginTop: -170,
+    marginTop: '3rem',
     width: '50%',
     height: '20%',
     resizeMode: 'contain',
