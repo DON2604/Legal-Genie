@@ -12,7 +12,7 @@ import { useFonts } from 'expo-font';
 export default function Signup() {
 
   const [fontsLoaded] = useFonts({
-    'Inter-Black': require('./assets/fonts/DMSerifText-Regular.ttf'),
+    'INDIA2023': require('../assets/fonts/INDIA2023-bold.ttf')
   });
   
   const handlePress = () => {
@@ -46,13 +46,6 @@ export default function Signup() {
 
         </LinearGradient>
       </View>
-
-      <Link
-        style={styles.link}
-        href={{ pathname: "AppContainer", params: { name: "Bacon" } }}
-      >
-        Go to Home again
-      </Link>
     </View>
   );
 }

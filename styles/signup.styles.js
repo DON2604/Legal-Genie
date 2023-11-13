@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'black', // Add this line to set the background color to black
+    backgroundColor: 'black',
+    fontFamily: "INDIA2023", 
+    fontSize: '16px', // Add this line to set the background color to black
   },
 
   button: {
@@ -21,7 +23,7 @@ const styles = StyleSheet.create({
 
   link: {
     color: 'black',
-    fontFamily: "Times New Roman", 
+    fontFamily: "INDIA2023", 
     fontSize: '16px',
   },
 
