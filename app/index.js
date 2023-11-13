@@ -1,24 +1,53 @@
-import { Text, View } from "react-native";
+import React from "react";
 import { Link, Stack } from "expo-router";
+import { LinearGradient } from "expo-linear-gradient";
+import { Image, View, Pressable } from "react-native";
+import styles from "../styles/signup.styles";
+import Logo from "../constants/legs.svg";
+import texti from "../constants/textg.png";
 
-export default function Page() {
+
+
+
+export default function Signup() {
+
+  const handlePress = () => {
+    navigation.navigate('AppContainer'); 
+  };
+
+
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View style={styles.container}>
       <Stack.Screen
         options={{
-          // https://reactnavigation.org/docs/headers#setting-the-header-title
-          title: "My home",
-          // https://reactnavigation.org/docs/headers#adjusting-header-styles
-          headerStyle: { backgroundColor: "#f4511e" },
-          headerTintColor: "#fff",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          }
+          headerShown: false,
         }}
       />
-      <Text>Home Screen</Text>
-      <Link href={{ pathname: "home", params: { name: "Raj" } }}>
-        Go to Home
+
+      <Logo style={styles.image} />
+      <Image style={styles.texti} source={texti} />
+
+      <View style={{ flexDirection: "row" }}>
+        <LinearGradient colors={["#a390f9", "#fed488"]} style={styles.button}>
+          <Pressable LinearGradient style={styles.button}>
+            Sign Up
+          </Pressable>
+        </LinearGradient>
+
+        <LinearGradient colors={["#a390f9", "#fed488"]} style={styles.button}>    
+          <Pressable LinearGradient style={styles.button}>
+          <Link style={styles.link}
+          href={{ pathname: "AppContainer", params: { name: "Bacon" } }}> Login </Link>
+          </Pressable>
+
+        </LinearGradient>
+      </View>
+
+      <Link
+        style={styles.link}
+        href={{ pathname: "AppContainer", params: { name: "Bacon" } }}
+      >
+        Go to Home again
       </Link>
     </View>
   );

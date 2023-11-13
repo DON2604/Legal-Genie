@@ -19,7 +19,9 @@ const styles = StyleSheet.create({
   },
 
   link: {
-    color: 'white', 
+    color: 'black',
+    fontFamily: "Times New Roman", 
+    fontSize: '16px',
   },
 
   image: {
