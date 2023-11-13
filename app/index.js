@@ -5,12 +5,16 @@ import { Image, View, Pressable } from "react-native";
 import styles from "../styles/signup.styles";
 import Logo from "../constants/legs.svg";
 import texti from "../constants/textg.png";
-
+import { useFonts } from 'expo-font';
 
 
 
 export default function Signup() {
 
+  const [fontsLoaded] = useFonts({
+    'Inter-Black': require('./assets/fonts/DMSerifText-Regular.ttf'),
+  });
+  
   const handlePress = () => {
     navigation.navigate('AppContainer'); 
   };
