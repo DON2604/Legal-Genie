@@ -1,21 +1,192 @@
 import { StyleSheet } from "react-native";
+import { FontFamily, FontSize, Color } from "../GlobalStyles";
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: "center",
+  aboutTypo: {
+    height: 64,
     alignItems: "center",
-  },
-  content: {
-    flex: 1,
-    alignItems: 'center',
+    display: "flex",
+    textAlign: "center",
+    fontFamily: FontFamily.montserratBold,
+    fontWeight: "700",
+    letterSpacing: 5.6,
+    fontSize: FontSize.size_61xl,
     justifyContent: "center",
-    width: '70%',
+    width: 804,
+    left: "50%",
+    marginLeft: -402,
+    position: "absolute",
   },
-  image: {
-    flex: 1
-  }
+  desktop2Position: {
+    left: "50%",
+    position: "absolute",
+  },
+  legalPosition: {
+    color: Color.colorWhite,
+    left: 143,
+    alignItems: "center",
+    display: "flex",
+    textAlign: "center",
+    position: "absolute",
+  },
+  groupParentFlexBox: {
+    flexDirection: "row",
+    alignItems: "center",
+    left: "50%",
+    position: "absolute",
+  },
+  groupLayout: {
+    height: 418,
+    width: 418,
+    left: 48,
+    position: "absolute",
+  },
+  withLegalGenieTypo: {
+    textAlign: "left",
+    fontFamily: FontFamily.montserratMedium,
+    fontWeight: "500",
+    lineHeight: 34,
+    letterSpacing: 1.2,
+    fontSize: FontSize.size_5xl,
+    color: Color.colorWhite,
+    alignItems: "center",
+    display: "flex",
+  },
+  image3Icon: {
+    left: 0,
+    width: 1555,
+    height: 756,
+    opacity: 0.45,
+    top: 0,
+    position: "absolute",
+  },
+  bg: {
+    top: 755,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "#181818",
+    width: 1440,
+    position: "absolute",
+  },
+  aboutUs: {
+    opacity: 0.6,
+    top: 0,
+  },
+  aboutUs1: {
+    top: 1,
+  },
+  aboutUsParent: {
+    top: 181,
+    height: 65,
+    width: 804,
+    marginLeft: -402,
+    left: "50%",
+    position: "absolute",
+  },
+  desktop2Child: {
+    marginLeft: -202.5,
+    top: 271,
+    width: 405,
+    height: 5,
+  },
+  welcomeToLegal: {
+    top: 353,
+    fontSize: 34,
+    letterSpacing: 1.7,
+    lineHeight: 45,
+    width: 1154,
+    fontFamily: FontFamily.montserratSemiBold,
+    fontWeight: "600",
+    justifyContent: "center",
+    color: Color.colorWhite,
+    left: 143,
+  },
+  legalTypo: {
+    fontFamily: FontFamily.montserratSemiBold,
+    fontWeight: "600",
+  },
+  happyLearning: {
+    fontStyle: "italic",
+    fontFamily: FontFamily.montserratSemiBoldItalic,
+    fontWeight: "600",
+  },
+  letLegalGenieContainer1: {
+    lineBreak: "anywhere",
+    width: "100%",
+  },
+  letLegalGenieContainer: {
+    top: 2699,
+    fontSize: 32,
+    letterSpacing: 1.6,
+    lineHeight: 43,
+    width: 1174,
+  },
+  desktop2Item: {
+    marginLeft: -18.41,
+    top: 673,
+    width: 37,
+    height: 21,
+  },
+  groupChild: {
+    backgroundColor: "#303030",
+    top: 47,
+    width: 418,
+    left: 48,
+  },
+  image4Icon: {
+    top: -16,
+    left: -16,
+    width: 450,
+    height: 450,
+    position: "absolute",
+  },
+  rectangleParent: {
+    height: 465,
+    width: 466,
+  },
+  withLegalGenie: {
+    width: 604,
+    marginLeft: 120,
+  },
+  groupParent: {
+    top: 854,
+    marginLeft: -595,
+    flexDirection: "row",
+  },
+  groupItem: {
+    backgroundColor: "#99573a",
+    top: 47,
+    width: 418,
+    left: 48,
+  },
+  groupContainer: {
+    top: 2084,
+    marginLeft: -595,
+    flexDirection: "row",
+  },
+  exploreASeamless: {
+    width: 612,
+  },
+  groupInner: {
+    top: 48,
+    backgroundColor: "#08275f",
+  },
+  rectangleContainer: {
+    height: 466,
+    marginLeft: 120,
+    width: 466,
+  },
+  exploreASeamlessLearningExParent: {
+    marginLeft: -599,
+    top: 1469,
+  },
+  desktop2: {
+    backgroundColor: "#000",
+    flex: 1,
+    height: 2955,
+    overflow: "hidden",
+    width: "100%",
+  },
 });
 
 export default styles;

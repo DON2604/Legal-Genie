@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { useFonts } from 'expo-font';
 
 const styles = StyleSheet.create({
   container: {
