@@ -7,11 +7,6 @@ export default function Details() {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Stack.Screen
-        options={{
-          title: params.name,
-        }}
-      />
       <Text
         onPress={() => {
           router.setParams({ name: 'Updated' });

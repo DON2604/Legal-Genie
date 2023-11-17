@@ -3,16 +3,17 @@ import { Stack } from "expo-router";
 import { Image } from "expo-image";
 import { View, Text, ScrollView } from "react-native";
 import styles from "../styles/about.styles";
-
+import "@expo/match-media";
+import { useMediaQuery } from "react-responsive";
+import PhoneAbout from "./phoneAbout";
 
 const Desktop2 = () => {
+  const isTabletOrMobileDevice = useMediaQuery({
+    maxDeviceWidth: 1000,
+  });
   return (
-    <ScrollView style={styles.desktop2}>
-    <Stack.Screen
-        options={{
-          headerShown: false,
-        }}
-      />
+    !isTabletOrMobileDevice?(
+    <ScrollView style={styles.desktop2}> 
       <Image
         style={styles.image3Icon}
         contentFit="cover"
@@ -93,6 +94,7 @@ const Desktop2 = () => {
         </View>
       </View>
     </ScrollView>
+  ):(<PhoneAbout />)
   );
 };
 
