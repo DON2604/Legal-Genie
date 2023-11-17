@@ -33,14 +33,14 @@ export default function Signup() {
       <View style={{ flexDirection: "row" }}>
         <LinearGradient colors={["#a390f9", "#fed488"]} style={styles.button}>
           <Pressable LinearGradient style={styles.button}>
-          <Text>Sign Up</Text>
+          <Text> Sign Up </Text>
           </Pressable>
         </LinearGradient>
 
         <LinearGradient colors={["#a390f9", "#fed488"]} style={styles.button}>    
           <Pressable LinearGradient style={styles.button}>
-          <Link style={styles.link}
-          href={{ pathname: "AppContainer", params: { name: "Bacon" } }}> <Text>Login</Text> </Link>
+          <Link 
+          href={{ pathname: "AppContainer", params: { name: "Bacon" } }}> <Text> Login </Text> </Link>
           </Pressable>
 
         </LinearGradient>

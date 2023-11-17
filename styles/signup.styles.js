@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'black',
-  // Add this line to set the background color to black
   },
 
   button: {
@@ -20,10 +19,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 
-  link: {
-    color: 'black',
- 
-  },
+
 
   image: {
     marginTop: '3rem',
