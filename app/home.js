@@ -10,6 +10,7 @@ export default function Home() {
       <Text style={styles.txt}>Home Screen</Text>
       <Link style={styles.txt} href={{ pathname: 'signup', params: { name: 'signup' } }}>Go to Signup</Link>
       <Link style={styles.txt} href={{ pathname: 'about', params: { name: 'about' } }}>Go to About</Link>
+      <Link style={styles.txt} href={{ pathname: 'profile', params: { name: 'profile' } }}>Go to Profile</Link>
       <Link style={styles.txt} href={{ pathname: 'contactUs', params: { name: 'contactUs' } }}>Go to Contact Us</Link>
     </View>
   );

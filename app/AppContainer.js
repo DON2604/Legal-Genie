@@ -6,10 +6,12 @@ import Icon from "react-native-vector-icons/Ionicons";
 import Home from "./home";
 import About from "./about";
 import ContactUs from "./contactUs";
+import ProfilePage from "./profile";
 
 const HomeStack = createStackNavigator();
 const ContactUsStack = createStackNavigator();
 const DetailsStack = createStackNavigator();
+const ProfileStack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 const HomeStackScreen = ({ navigation }) => (
@@ -57,6 +59,28 @@ const DetailsStackScreen = () => (
     />
   </DetailsStack.Navigator>
 );
+
+const ProfileStackScreen = () => (
+  <ProfileStack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
+    <ProfileStack.Screen
+      name="Profile"
+      component={ProfilePage}
+      options={{
+        headerLeft: () => (
+          <Icon.Button
+            name="ios-menu"
+            size={25}
+            backgroundColor="#009387"
+          ></Icon.Button>
+        ),
+      }}
+    />
+  </ProfileStack.Navigator>
+)
 
 const ContactUsStackScreen = () => (
     <ContactUsStack.Navigator
@@ -106,7 +130,7 @@ const ContactUsStackScreen = () => (
       />
       <Tab.Screen
         name="Profile"
-        component={DetailsStackScreen}
+        component={ProfileStackScreen}
         options={{
           tabBarLabel: "Profile",
           tabBarColor: "#1f65ff",
