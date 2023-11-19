@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
+import { LinearGradient } from "expo-linear-gradient";
 
 const ContactUs = () => {
   const handleSubmit = () => {
@@ -28,9 +29,11 @@ const ContactUs = () => {
         multiline
         numberOfLines={5}
       />
+      <LinearGradient colors={["#a390f9", "#fed488"]}>
       <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
         <Text style={styles.submitButtonText}>Submit</Text>
       </TouchableOpacity>
+      </LinearGradient>
     </View>
   );
 };
@@ -41,34 +44,37 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: widthPercentageToDP('5%'),
+    backgroundColor: '#000',
   },
   title: {
-    fontSize: widthPercentageToDP('5%'),
+    fontSize: widthPercentageToDP('7%'),
     fontWeight: 'bold',
-    marginBottom: heightPercentageToDP('3%'),
+    marginTop: heightPercentageToDP('-5%'),
+    marginBottom: heightPercentageToDP('7%'),
+    color: '#fff',
   },
   input: {
     width: '100%',
     height: heightPercentageToDP('6%'),
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#ddd',
     borderRadius: 8,
     paddingHorizontal: widthPercentageToDP('3%'),
     marginBottom: heightPercentageToDP('3%'),
     fontSize: widthPercentageToDP('4%'),
+    color: '#fff',
   },
   messageInput: {
     height: heightPercentageToDP('15%'),
   },
   submitButton: {
-    backgroundColor: '#4CAF50',
-    paddingVertical: heightPercentageToDP('2%'),
+    paddingVertical: heightPercentageToDP('1.6%'),
     paddingHorizontal: widthPercentageToDP('5%'),
     borderRadius: 8,
   },
   submitButtonText: {
-    color: '#fff',
-    fontSize: widthPercentageToDP('4%'),
+    color: '#000',
+    fontSize: widthPercentageToDP('4.5%'),
     textAlign: 'center',
   },
 });

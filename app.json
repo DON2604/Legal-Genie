@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "your_rights",
-    "slug": "your_rights"
+    "slug": "your_rights",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aa830c26-1e80-4862-87a4-034685496af5"
+      }
+    },
+    "android": {
+      "package": "com.don2604.your_rights"
+    }
   }
 }
