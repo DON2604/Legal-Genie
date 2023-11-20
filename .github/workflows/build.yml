@@ -25,8 +25,5 @@ jobs:
     - name: Ensure executable permissions for gradlew
       run: chmod +x mainapp/gradlew
 
-    - name: Set JAVA_HOME
-      run: echo "JAVA_HOME=/usr/lib/jvm/adoptopenjdk-17-hotspot-amd64" >> $GITHUB_ENV
-
     - name: Build with Gradle
       run: ./mainapp/gradlew -p mainapp assembleDebug
