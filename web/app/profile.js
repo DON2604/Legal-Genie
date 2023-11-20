@@ -20,7 +20,7 @@ const Profile = () => {
         <View style={styles.userInfo}>
           <View style={styles.nameLayout}>
             <Text style={[styles.genvTypo, styles.username2]}>Username</Text>
-            <Text style={[styles.genvTypo, styles.genv]}>SpiderMon</Text>
+            <Text style={[styles.genvTypo, styles.genv]}>SpiderMan</Text>
           </View>
           <View style={styles.nameLayout}>
             <Text style={[styles.genvTypo, styles.username2]}>First Name</Text>
