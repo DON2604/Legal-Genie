@@ -20,4 +20,4 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: ./gradlew -p mainapp assembleDebug
+      run: ./mainapp/gradlew -p mainapp assembleDebug
