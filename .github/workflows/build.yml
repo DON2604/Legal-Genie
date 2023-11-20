@@ -19,5 +19,11 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
 
+    - name: Display directory structure
+      run: ls -R mainapp
+
+    - name: Ensure executable permissions for gradlew
+      run: chmod +x mainapp/gradlew
+
     - name: Build with Gradle
       run: ./mainapp/gradlew -p mainapp assembleDebug
