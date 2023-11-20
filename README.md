@@ -1,4 +1,4 @@
-# MyLegalApp
+# 🤖 Legal Genie 📜 <br><br> [![Build and Generate APK](https://github.com/DON2604/Legal-Genie/actions/workflows/build.yml/badge.svg)](https://github.com/DON2604/Legal-Genie/actions/workflows/build.yml)
 
 Welcome to MyLegalApp, the intelligent legal conditions analysis application! 🚀
 
