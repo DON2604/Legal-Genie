@@ -26,6 +26,7 @@ const HomeStackScreen = ({ navigation }) => (
       name="Home"
       component={Home}
       options={{
+        headerShown: false,
         title: "Overview",
         headerLeft: () => (
           <Icon.Button
@@ -107,11 +108,14 @@ const ContactUsStackScreen = () => (
 );
 
 const MainTabScreen = () => (
-  <Tab.Navigator initialRouteName="Home" >
+  <Tab.Navigator 
+  initialRouteName="Home" 
+  screenOptions={{ headerShown: false }} >
     <Tab.Screen
       name="Home"
       component={HomeStackScreen}
       options={{
+        headerShown: false,
         tabBarLabel: "Home",
         tabBarColor: "#009387",
         tabBarIcon: ({ color }) => (
@@ -123,6 +127,7 @@ const MainTabScreen = () => (
       name="About"
       component={DetailsStackScreen}
       options={{
+        headerShown: false,
         tabBarLabel: "About",
         tabBarColor: "#1f65ff",
         tabBarIcon: ({ color }) => (
@@ -134,6 +139,7 @@ const MainTabScreen = () => (
       name="Profile"
       component={ProfileStackScreen}
       options={{
+        headerShown: false,
         tabBarLabel: "Profile",
         tabBarColor: "#1f65ff",
         tabBarIcon: ({ color }) => (
@@ -145,6 +151,7 @@ const MainTabScreen = () => (
       name="ContactUs"
       component={ContactUsStackScreen}
       options={{
+        headerShown: false,
         tabBarColor: "#1f65ff",
         tabBarIcon: ({ color }) => (
           <Icon name="ios-mail" color={color} size={26} />

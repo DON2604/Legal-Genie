@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
   title: {
-    fontSize: widthPercentageToDP('7%'),
+    fontSize: widthPercentageToDP('11%'),
     fontWeight: 'bold',
     marginTop: heightPercentageToDP('-5%'),
     marginBottom: heightPercentageToDP('7%'),
