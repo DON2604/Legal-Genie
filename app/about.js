@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Stack } from "expo-router";
 import { Image } from "expo-image";
 import { View, Text, ScrollView } from "react-native";
 import styles from "../styles/about.styles";

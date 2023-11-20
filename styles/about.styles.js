@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
   },
   aboutUs1: {
     top: 1,
+    color: '#fff',
   },
   aboutUsParent: {
     top: 181,
