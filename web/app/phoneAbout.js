@@ -10,10 +10,12 @@ const PhoneAbout = () => {
     >
       <View style={styles.iphone1415Pro1}>
         <Text style={[styles.welcomeToLegal, styles.aboutUsPosition]}>
-          Welcome to Legal Genie, a revolutionary application designed to simplify
-          the comprehension of the Indian Constitution. Our mission is to make the
-          complexities of constitutional law accessible to everyone, from students
-          and researchers to the general public.
+          The "Legal Genie" project proposes an innovative solution to address
+          the challenges of comprehending the intricate Indian Constitution. The
+          solution includes an interactive learning interface, personalized
+          learning paths, and natural language processing for simplified
+          explanations. It incorporates interactive quizzes, simulations, and
+          regular updates, fostering community engagement and discussion forums.
         </Text>
         <Text style={[styles.aboutUs, styles.aboutUsPosition]}>ABOUT US</Text>
       </View>

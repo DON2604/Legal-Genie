@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
     borderRadius: wp("50%"),
     width: wp("20%"),
     height: wp("20%"), 
-    marginTop: wp("5%"),// Adjusted to bring it a bit above
+    marginTop: wp("5%"),
+    marginBottom: wp("5%"),// Adjusted to bring it a bit above
   },
   userInfo: {
     width: wp("80%"),
