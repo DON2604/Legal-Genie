@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 
 const ContactUs = () => {
   const handleSubmit = () => {
-    // Handle form submission logic here
+
   };
 
   return (

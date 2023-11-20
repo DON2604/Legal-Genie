@@ -34,7 +34,7 @@ export default function Signup() {
         <LinearGradient colors={["#a390f9", "#fed488"]} style={styles.button}>    
           <Pressable LinearGradient style={styles.button}>
           <Link style={styles.link}
-          href={{ pathname: "AppContainer", params: { name: "Bacon" } }}> <Text>Login</Text> </Link>
+          href={{ pathname: "AppContainer"}}> <Text>Login</Text> </Link>
           </Pressable>
 
         </LinearGradient>

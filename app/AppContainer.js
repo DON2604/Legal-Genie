@@ -14,10 +14,12 @@ const DetailsStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
+
+
 const HomeStackScreen = ({ navigation }) => (
   <HomeStack.Navigator
     screenOptions={{
-        headerShown: false,
+      headerShown: false,
     }}
   >
     <HomeStack.Screen
@@ -80,76 +82,76 @@ const ProfileStackScreen = () => (
       }}
     />
   </ProfileStack.Navigator>
-)
+);
 
 const ContactUsStackScreen = () => (
-    <ContactUsStack.Navigator
-      screenOptions={{
-        headerShown: false,
+  <ContactUsStack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
+    <ContactUsStack.Screen
+      name="ContactUs"
+      component={ContactUs}
+      options={{
+        headerLeft: () => (
+          <Icon.Button
+            name="ios-menu"
+            size={25}
+            backgroundColor="#009387"
+          ></Icon.Button>
+        ),
       }}
-    >
-      <ContactUsStack.Screen
-        name="ContactUs"
-        component={ContactUs}
-        options={{
-          headerLeft: () => (
-            <Icon.Button
-              name="ios-menu"
-              size={25}
-              backgroundColor="#009387"
-            ></Icon.Button>
-          ),
-        }}
-      />
-    </ContactUsStack.Navigator>
-  );
+    />
+  </ContactUsStack.Navigator>
+);
 
-  const MainTabScreen = () => (
-    <Tab.Navigator initialRouteName="Home" activeColor="#fff">
-      <Tab.Screen
-        name="Home"
-        component={HomeStackScreen}
-        options={{
-          tabBarLabel: "Home",
-          tabBarColor: "#009387",
-          tabBarIcon: ({ color }) => (
-            <Icon name="ios-home" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="About"
-        component={DetailsStackScreen}
-        options={{
-          tabBarLabel: "About",
-          tabBarColor: "#1f65ff",
-          tabBarIcon: ({ color }) => (
-            <Icon name="git-compare" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={ProfileStackScreen}
-        options={{
-          tabBarLabel: "Profile",
-          tabBarColor: "#1f65ff",
-          tabBarIcon: ({ color }) => (
-            <Icon name="ios-person" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="ContactUs"
-        component={ContactUsStackScreen}
-        options={{
-          tabBarColor: "#1f65ff",
-          tabBarIcon: ({ color }) => (
-            <Icon name="ios-mail" color={color} size={26} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-  );
+const MainTabScreen = () => (
+  <Tab.Navigator initialRouteName="Home" >
+    <Tab.Screen
+      name="Home"
+      component={HomeStackScreen}
+      options={{
+        tabBarLabel: "Home",
+        tabBarColor: "#009387",
+        tabBarIcon: ({ color }) => (
+          <Icon name="ios-home" color={color} size={26} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="About"
+      component={DetailsStackScreen}
+      options={{
+        tabBarLabel: "About",
+        tabBarColor: "#1f65ff",
+        tabBarIcon: ({ color }) => (
+          <Icon name="git-compare" color={color} size={26} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="Profile"
+      component={ProfileStackScreen}
+      options={{
+        tabBarLabel: "Profile",
+        tabBarColor: "#1f65ff",
+        tabBarIcon: ({ color }) => (
+          <Icon name="ios-person" color={color} size={26} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="ContactUs"
+      component={ContactUsStackScreen}
+      options={{
+        tabBarColor: "#1f65ff",
+        tabBarIcon: ({ color }) => (
+          <Icon name="ios-mail" color={color} size={26} />
+        ),
+      }}
+    />
+  </Tab.Navigator>
+);
 
 export default MainTabScreen;
