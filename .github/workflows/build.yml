@@ -27,3 +27,9 @@ jobs:
 
     - name: Build with Gradle
       run: ./mainapp/gradlew -p mainapp assembleDebug
+
+    - name: Archive APK artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-debug
+        path: mainapp/app/build/outputs/apk/debug/
