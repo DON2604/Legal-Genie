@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   profile1Position: {
     textAlign: "center",
-    color: Color.colorWhite, // Adjusted to bring it a bit above
+    color: Color.colorWhite, 
   },
   bg: {
     width: wp("100%"),
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     width: wp("20%"),
     height: wp("20%"), 
     marginTop: wp("5%"),
-    marginBottom: wp("5%"),// Adjusted to bring it a bit above
+    marginBottom: wp("5%"),
   },
   userInfo: {
     width: wp("80%"),

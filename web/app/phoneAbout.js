@@ -6,7 +6,7 @@ const PhoneAbout = () => {
   return (
     <ImageBackground
       style={styles.backgroundImage}
-      source={require("../assets/fpdl.png")} // Use your image source here
+      source={require("../assets/fpdl.png")} 
     >
       <View style={styles.iphone1415Pro1}>
         <Text style={[styles.welcomeToLegal, styles.aboutUsPosition]}>
@@ -26,7 +26,7 @@ const PhoneAbout = () => {
 const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
-    resizeMode: "cover", // or "stretch" or "contain"
+    resizeMode: "cover", 
     justifyContent: "center",
   },
   aboutUsPosition: {
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 852,
     overflow: "hidden",
-    backgroundColor: "rgba(0,0,0,0.5)", // Add background color with opacity
+    backgroundColor: "rgba(0,0,0,0.5)", 
   },
 });
 
