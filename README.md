@@ -21,7 +21,7 @@ MyLegalApp is an Expo-powered mobile application designed to provide users with 
 
    ```bash
    https://github.com/DON2604/Legal-Genie.git
-   cd website
+   cd web
 
 ## Installation
 
