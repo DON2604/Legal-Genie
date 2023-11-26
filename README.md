@@ -20,8 +20,8 @@ MyLegalApp is an Expo-powered mobile application designed to provide users with 
 - Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/MyLegalApp.git
-   cd MyLegalApp
+   https://github.com/DON2604/Legal-Genie.git
+   cd website
 
 ## Installation
 
