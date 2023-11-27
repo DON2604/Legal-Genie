@@ -1,6 +1,6 @@
 # 🤖 Legal Genie 📜 <br><br> [![Build and Generate APK](https://github.com/DON2604/Legal-Genie/actions/workflows/build.yml/badge.svg)](https://github.com/DON2604/Legal-Genie/actions/workflows/build.yml)
 
-Welcome to MyLegalApp, the intelligent legal conditions analysis application! 🚀
+Welcome to MyLegalApp, the intelligent legal conditions analysis application! 🚀 
 
 ## Overview
 
@@ -20,8 +20,8 @@ MyLegalApp is an Expo-powered mobile application designed to provide users with 
 - Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/MyLegalApp.git
-   cd MyLegalApp
+   https://github.com/DON2604/Legal-Genie.git
+   cd web
 
 ## Installation
 
